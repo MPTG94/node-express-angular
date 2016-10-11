@@ -125,15 +125,15 @@ router.delete('/:ID', jsonParser, function(req, res) {
           if (err) {
             throw err;
           } else {
-            var resultMsg = "Object deleted successfuly";
-            res.json(resultMsg);
+            result.Message = "Object deleted successfuly";
+            res.json(result);
           }
         });
       console.log(`QUERY: ${query.sql}`);
     } else {
       // Request body ID doesn't match request URL parameter ID, not deleting
-      result.Error = "Request body ID doesn't match \
-request URL parameters ID, not deleting";
+      result.Error = "Request body ID doesn't match " +
+        "request URL parameters ID, not deleting";
       return res.status(400).json(result);
     }
   } else {
