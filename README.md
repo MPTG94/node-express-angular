@@ -5,7 +5,7 @@ Learning and playing with NodeJS, ExpressJS and Angular2
 * Add CSS minification - DONE!
 * Add JS minification - DONE!
 * Add HTML minifcation - DONE!
-* Add unit tests
+* Add REST API Functionality - DONE!
 * Add Angular2
-* Add REST API Functionality
 * Add GraphQL support
+* Add unit tests
